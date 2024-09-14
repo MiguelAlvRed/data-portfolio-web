@@ -10,16 +10,16 @@ type EducationItem = {
 
 const educationList: EducationItem[] = [
   {
-    degree: "Master of Science in Data Science",
-    institution: "Tech University",
-    year: "2018",
-    description: "Focused on machine learning, statistical analysis, and big data technologies. Completed a thesis on 'Optimizing Neural Networks for Time Series Forecasting in Financial Markets'."
+    degree: "MSc in Big Data & Business Intelligence",
+    institution: "EAE Business School",
+    year: "2022 - 2023",
+    description: "Focusing on advanced data analytics, machine learning, and business intelligence applications. Developing skills in Python, R, and various BI tools."
   },
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "State University",
-    year: "2016",
-    description: "Specialized in algorithms, data structures, and software engineering principles. Participated in multiple hackathons and led a team project on developing a predictive maintenance system for IoT devices."
+    degree: "Bachelor of Science in Industrial Engineering",
+    institution: "University of Vigo",
+    year: "2017 - 2022",
+    description: "Specialized in process optimization, data analysis, and project management. Completed a thesis on 'Analysis, diagnosis, and implementation of improvements in the commercial area of a metal products manufacturer'."
   }
 ]
 

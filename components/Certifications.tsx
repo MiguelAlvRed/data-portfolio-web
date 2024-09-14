@@ -10,22 +10,28 @@ type CertificationItem = {
 
 const certificationsList: CertificationItem[] = [
   {
-    name: "Certified Data Scientist",
-    issuer: "Data Science Association",
-    year: "2020",
-    description: "Professional certification demonstrating expertise in data analysis, machine learning, and statistical modeling. Completed a rigorous exam and practical project showcasing advanced data science skills."
+    name: "Professional Certificate - IBM Data Analyst",
+    issuer: "Coursera",
+    year: "2022",
+    description: "Comprehensive certification covering data analysis methodologies, tools, and best practices. Demonstrated proficiency in Python, SQL, and data visualization techniques."
   },
   {
-    name: "AWS Certified Machine Learning - Specialty",
-    issuer: "Amazon Web Services",
-    year: "2019",
-    description: "Validates expertise in designing, implementing, and maintaining machine learning solutions on AWS. Demonstrates proficiency in data engineering, exploratory data analysis, modeling, and operations."
+    name: "Learn JavaScript Course",
+    issuer: "Codecademy",
+    year: "2022",
+    description: "Mastered fundamental and advanced JavaScript concepts, including DOM manipulation, asynchronous programming, and modern ES6+ features."
   },
   {
-    name: "TensorFlow Developer Certificate",
-    issuer: "Google",
+    name: "Learn SQL Course",
+    issuer: "Codecademy",
     year: "2021",
-    description: "Demonstrates proficiency in using TensorFlow to solve deep learning and ML problems. Showcases ability to build and train neural networks for both computer vision and natural language processing tasks."
+    description: "Developed strong SQL skills for database management, complex queries, and data manipulation. Covered both basic and advanced SQL concepts."
+  },
+  {
+    name: "B2 First Certificate in English",
+    issuer: "Cambridge Assessment English",
+    year: "2017",
+    description: "Demonstrated upper-intermediate level proficiency in English language skills, including reading, writing, listening, and speaking."
   }
 ]
 

@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 
 const experiences = [
   {
-    title: 'Data Analyst',
+    title: 'Product Data Analyst',
     company: 'Leadtech Group',
-    companyUrl: 'https://leadtech.com',
-    period: 'Apr 2023 - Present',
+    companyUrl: 'https://www.leadtech.com',
+    period: '2024 - Present',
     description: 'Analyzing data to provide insights and support decision-making processes in the tech industry.',
     achievements: [
       'Developed and maintained dashboards using Power BI for real-time performance monitoring.',
@@ -14,10 +14,22 @@ const experiences = [
     ]
   },
   {
-    title: 'Business Intelligence Analyst',
-    company: 'Dinak',
-    companyUrl: 'https://dinak.com',
-    period: 'Jul 2022 - Mar 2023',
+    title: 'Data Analyst',
+    company: 'Cabify',
+    companyUrl: 'https://wwww.cabify.com',
+    period: '2023 - 2024',
+    description: 'Focused on developing and implementing business intelligence solutions to support strategic decision-making.',
+    achievements: [
+      'Created and maintained Power BI dashboards for sales and operations performance monitoring.',
+      'Developed VBA macros to automate data processing and reporting tasks, improving efficiency by 30%.',
+      'Conducted market analysis and competitor benchmarking to identify growth opportunities.',
+    ]
+  },
+  {
+    title: 'Business Analyst',
+    company: 'Amazon',
+    companyUrl: 'https://wwww.amazon.com',
+    period: '2022 - 2023',
     description: 'Focused on developing and implementing business intelligence solutions to support strategic decision-making.',
     achievements: [
       'Created and maintained Power BI dashboards for sales and operations performance monitoring.',
@@ -29,7 +41,7 @@ const experiences = [
     title: 'Intern, General Management',
     company: 'Dinak',
     companyUrl: 'https://dinak.com',
-    period: 'Feb 2022 - Jun 2022',
+    period: '2021 - 2022',
     description: 'Gained hands-on experience in various aspects of business management and data analysis.',
     achievements: [
       'Assisted in the development of a new ERP system, focusing on data integration and reporting.',

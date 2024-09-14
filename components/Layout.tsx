@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className={`min-h-screen flex flex-col transition-colors duration-300 ${resolvedTheme === 'dark' ? 'dark' : ''}`}>
       <Header />
-      <main className="flex-grow bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300" aria-label="Contenido principal">
+      <main className="flex-grow bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300 py-8" aria-label="Contenido principal"> {/* Añadido py-8 */}
         {children}
       </main>
       <Footer />

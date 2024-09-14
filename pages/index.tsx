@@ -12,12 +12,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>John Doe - Data Science & ML Engineer</title>
-        <meta name="description" content="Portfolio of John Doe, Data Science & ML Engineer" />
+        <title>Miguel Alvarez Redondo - Data Analyst & Business Intelligence Specialist</title>
+        <meta name="description" content="Portfolio of Miguel Alvarez Redondo, Data Analyst & Business Intelligence Specialist" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="space-y-24">
+      <div className="space-y-16"> {/* Cambiado de space-y-24 a space-y-16 */}
         <Hero />
         <About />
         <Experience />

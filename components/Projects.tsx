@@ -2,36 +2,22 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown, ExternalLink, ArrowUp } from 'lucide-react'
+import { ChevronDown, ExternalLink, ArrowUp, Database, FileSpreadsheet } from 'lucide-react'
 
-const projects = [
+export const projects = [
   {
-    title: 'Advanced E-commerce Analytics Platform',
-    description: 'Developed a comprehensive analytics platform using Python, Pandas, and Dash to provide real-time insights into e-commerce performance, resulting in a 25% increase in conversion rates.',
-    tools: ['Python', 'Pandas', 'Dash', 'SQL', 'Machine Learning'],
-    link: 'https://github.com/johndoe/ecommerce-analytics-platform',
-    image: '/placeholder.svg?height=300&width=400'
+    id: 'etl-pipeline',
+    title: 'Automated ETL Pipeline for BigQuery Data Warehouse',
+    summary: 'Developed a robust ETL pipeline to process and load daily financial data from multiple sources into Google BigQuery, enabling comprehensive analytics for a fintech startup.',
+    image: '/images/bigquery-etl-architecture.png',
+    icon: <Database className="ml-2 h-6 w-6 text-blue-500" />,
   },
   {
-    title: 'Predictive Customer Churn Model',
-    description: 'Implemented an advanced machine learning model using scikit-learn and TensorFlow to predict customer churn with 92% accuracy, enabling proactive retention strategies.',
-    tools: ['Python', 'scikit-learn', 'TensorFlow', 'Keras', 'Feature Engineering'],
-    link: 'https://github.com/johndoe/predictive-churn-model',
-    image: '/placeholder.svg?height=300&width=400'
-  },
-  {
-    title: 'Real-time Supply Chain Optimization',
-    description: 'Created a real-time supply chain optimization system using Apache Kafka and PySpark, resulting in a 15% reduction in inventory costs and improved delivery times.',
-    tools: ['Apache Kafka', 'PySpark', 'Scala', 'Optimization Algorithms'],
-    link: 'https://github.com/johndoe/supply-chain-optimization',
-    image: '/placeholder.svg?height=300&width=400'
-  },
-  {
-    title: 'Natural Language Processing for Customer Feedback',
-    description: 'Developed an NLP pipeline using BERT and spaCy to analyze customer feedback, extracting key insights and sentiment with 88% accuracy.',
-    tools: ['Python', 'BERT', 'spaCy', 'Transformers', 'Sentiment Analysis'],
-    link: 'https://github.com/johndoe/nlp-customer-feedback',
-    image: '/placeholder.svg?height=300&width=400'
+    id: 'interactive-dashboard',
+    title: 'Interactive Dashboard System with Google Sheets and Apps Script',
+    summary: 'Created a dynamic reporting system that pulls data from BigQuery into Google Sheets, providing interactive dashboards for executive decision-making.',
+    image: '/images/sheets-dashboard-architecture.png',
+    icon: <FileSpreadsheet className="ml-2 h-6 w-6 text-blue-500" />,
   }
 ]
 
@@ -49,7 +35,7 @@ export default function Projects() {
   return (
     <motion.section
       id="projects"
-      className="py-20"
+      className="py-20 bg-gray-50 dark:bg-gray-900"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -66,30 +52,21 @@ export default function Projects() {
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
               className="w-full px-4"
             >
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-all border-t-4 border-blue-600 dark:border-blue-500">
+              <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-all border-t-4 border-blue-600 dark:border-blue-500">
+                <h3 className="text-2xl font-semibold mb-4 flex items-center">
+                  {projects[currentProjectIndex].title}
+                  {projects[currentProjectIndex].icon}
+                </h3>
+                <p className="mb-6 text-gray-600 dark:text-gray-300">{projects[currentProjectIndex].summary}</p>
                 <Image
                   src={projects[currentProjectIndex].image}
-                  alt={projects[currentProjectIndex].title}
-                  width={400}
-                  height={300}
-                  className="w-full h-48 object-cover mb-4 rounded"
+                  alt={`Architecture diagram for ${projects[currentProjectIndex].title}`}
+                  width={800}
+                  height={400}
+                  className="w-full h-auto object-cover mb-6 rounded-lg shadow-md"
                 />
-                <h3 className="text-xl font-semibold mb-2">
-                  <a href={projects[currentProjectIndex].link} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center">
-                    {projects[currentProjectIndex].title}
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </h3>
-                <p className="mb-4">{projects[currentProjectIndex].description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {projects[currentProjectIndex].tools.map((tool, i) => (
-                    <span key={i} className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs px-2 py-1 rounded">
-                      {tool}
-                    </span>
-                  ))}
-                </div>
-                <Link href={projects[currentProjectIndex].link} className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300">
-                  View Project
+                <Link href={`/projects/${projects[currentProjectIndex].id}`} className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                  View Project Details
                   <ArrowUp className="ml-2 h-4 w-4 rotate-45" />
                 </Link>
               </div>

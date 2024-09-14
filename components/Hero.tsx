@@ -12,14 +12,16 @@ export default function Hero() {
       transition={{ duration: 0.6 }}
     >
       <div className="relative w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden">
+        {/* Imagen de perfil comentada temporalmente
         <Image
           src="/placeholder.svg?height=128&width=128"
           alt="John Doe"
           layout="fill"
           objectFit="cover"
         />
+        */}
       </div>
-      <h1 className="text-4xl md:text-6xl font-bold mb-4">Data Science & ML Engineer</h1>
+      <h1 className="text-4xl md:text-6xl font-bold mb-4">Product Analytics Expert</h1>
       <p className="max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300 mb-8">
         Transforming complex data into actionable insights and intelligent systems. 
         Specializing in advanced analytics, machine learning, and scalable data solutions.

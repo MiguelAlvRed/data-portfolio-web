@@ -2,12 +2,12 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 const skills = [
-  { name: 'Python', logo: '/placeholder.svg?height=32&width=32' },
-  { name: 'R', logo: '/placeholder.svg?height=32&width=32' },
-  { name: 'SQL', logo: '/placeholder.svg?height=32&width=32' },
-  { name: 'Tableau', logo: '/placeholder.svg?height=32&width=32' },
-  { name: 'Power BI', logo: '/placeholder.svg?height=32&width=32' },
-  { name: 'Excel', logo: '/placeholder.svg?height=32&width=32' },
+  { name: 'Python', logo: '/icons/python.svg' },
+  { name: 'R', logo: '/icons/r_studio.svg' },
+  { name: 'SQL', logo: '/icons/sql.svg' },
+  { name: 'Tableau', logo: '/icons/tableau.svg' },
+  { name: 'Google Cloud', logo: '/icons/google_cloud.svg' },
+  { name: 'Excel', logo: '/icons/excel.svg' },
 ]
 
 export default function Skills() {

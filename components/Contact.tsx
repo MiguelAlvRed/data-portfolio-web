@@ -14,19 +14,19 @@ export default function Contact() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Get in Touch</h2>
         <p className="text-center max-w-2xl mx-auto mb-12">
-          Interested in collaborating on cutting-edge data science projects or need expert consultation? 
-          Let's connect and explore how we can leverage data to drive innovation and solve complex challenges.
+          Interested in collaborating on innovative data analytics projects or need expert consultation? 
+          Let's connect and explore how we can leverage data to drive insights and solve complex business challenges.
         </p>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
-          <Link href="mailto:john@example.com" className="flex items-center justify-center text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors">
+          <Link href="mailto:miguelalvarezredondo@gmail.com" className="flex items-center justify-center text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors">
             <Mail className="h-5 w-5 mr-2" />
             Email
           </Link>
-          <Link href="https://github.com/johndoe" className="flex items-center justify-center text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors">
+          <Link href="https://github.com/miguelalvarezredondo" className="flex items-center justify-center text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors">
             <Github className="h-5 w-5 mr-2" />
             GitHub
           </Link>
-          <Link href="https://linkedin.com/in/johndoe" className="flex items-center justify-center text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors">
+          <Link href="https://www.linkedin.com/in/miguelalvarezredondo/" className="flex items-center justify-center text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors">
             <Linkedin className="h-5 w-5 mr-2" />
             LinkedIn
           </Link>
